@@ -1,0 +1,304 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./styling/style1.css">
+    <link rel="stylesheet" href="nav.css">
+    <!-- bootstrap cdn link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+    <!-- including font-awesome and bootstrap-social -->
+    <script src="https://kit.fontawesome.com/f4bc18eeb3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap-social.css">
+
+    <!-- google font cdn-->
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300&display=swap" rel="stylesheet">
+    <link rel='icon' href="img/logo.png">
+
+
+
+
+
+
+    <!-- <link rel="stylesheet" href="./styling/style1.css" /> -->
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="app1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+        integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+        var wow = new WOW(
+            {
+                boxClass: 'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset: 0,          // distance to the element when triggering the animation (default is 0)
+                mobile: true,       // trigger animations on mobile devices (default is true)
+                live: true,       // act on asynchronously loaded content (default is true)
+                callback: function (box) {
+                    // the callback is fired every time an animation is started
+                    // the argument that is passed in is the DOM node being animated
+                },
+                scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                resetAnimation: true,     // reset animation on end (default is true)
+            }
+        );
+        wow.init();
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!--navbar
+<div class="topnav" id="myTopnav">
+    <a href="index1.html" class="active">Home</a>
+    <a href="store.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>-->
+<div class="head" id="topheader">
+     <nav class="navbar navbar-expand-md  navbar-light fixed-top" style="background-color: #e3f2fd;">
+
+         <div class="container text-uppercase ps-2">
+             <a class="navbar-brand" href="#">WEB TECH</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                 <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                         <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">About</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="">Courses</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="https://ayuu01.github.io/Quiz_app/quiz.html">Quizes</a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+     </nav>
+
+
+    <!--<form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+
+
+
+    <!-- Navbar Section 
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#" id="navbar__logo">CONFETTI CART</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index1.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links" id="services-page">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>-->
+    <!-- <section class="breadcrumbs-section">
+        <div class="container p-1 p-sm-3">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="wow fadeOut">
+                        About Us
+                    </h2>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">About Us</a></li>
+
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+
+    </section> -->
+
+
+
+    <br><br>
+    <!-- <section class="my-5">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <img src="./images/slide2.jpg" class="img-fluid aboutimg wow zoomIn">
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <h2 class="display-4 wow flash">Web-Tech</h2>
+                    <p class="py-3"> This website contains JavaScript based games incorporated with an
+                        interface created with html and CSS and named it as ‘Power Play’, which is basically a gaming
+                        hub.
+                        . The Online Game Hub provides an
+                        easy interface that would let the users to the pool of gaming. It provides the users more
+                        pleasure and gladdening his mind by playing these traditional games such as
+                        ludo,bingo,puzzle,dots,vanish and memory game. Gaming gives relaxation and enjoyment to every
+                        user.In this busy world, gaming is the solution to release the depression and tension.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="banner" style="background-color: white;">
+
+     <div class="container-fluid" >
+         <div class="row " >
+             <div class="col-lg-6 col-md-12 ">
+                 <img src="./images/about.jpg" alt="">
+             </div>
+             <div class="col-lg-6 col-md-12 ">
+                 <br>
+                 <h1 style="color: rgb(12, 27, 97);">Web Tech</h1>
+                 <p>Web Tech provide the best learning experience to the students and give them chance to expand their knowledge and learn new skills. Our main focus is the overall development of the students so we have made quizes as it make them more confident on the topics they have learnt. We provide the best course content to the students so that they more intend towards studies. </p>
+                 <br>
+
+                 <!-- <div class="banner-btn">
+                     <a href="#">Join Now</a>
+                 </div> -->
+             </div>
+         </div>
+     </div>
+
+
+ </section>
+
+   
+
+
+
+
+
+ <footer class="footer-section" id="footer-div">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-12 footer-div">
+                <div>
+                    <h3>
+                        WEB TECH
+                    </h3>
+                    <p>Web Tech provide the best learning experience to the students and give them chance to expand their knowledge and learn new skills.</p>
+
+                </div>
+            </div>
+            <br>
+            <div class="col-lg-2 col-md-4 col-12 footer-div">
+                <div>
+                    <h3>
+                        Company
+                    </h3>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About</a></li>
+
+
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12 footer-div">
+                <div>
+                    <h3>
+                        Languages
+                    </h3>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Reacts</a></li>
+
+
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12 footer-div">
+                <div>
+                    <h3>
+                        Learn
+                    </h3>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Quizes</a></li>
+                    <li><a href="#">Video Lectures</a></li>
+                    <li><a href="#">Courses</a></li>
+
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 col-12 footer-div">
+                <div>
+                    <h3>
+                       Learn
+                    </h3>
+                    <li><a href="#">Languages</a></li>
+                    <li><a href="#">CS Subjects</a></li>
+                    <li><a href="#">Video Lectures</a></li>
+                    <li><a href="#">Courses</a></li>
+
+                </div>
+            </div> -->
+        </div>
+
+        <div class="mt-5 text-center">
+            <p class="text-center">© Copyright WEB TECH 2020. All rights reserved
+
+            </p>
+        </div>
+
+
+    </div>
+</footer>
+
+
+
+
+</body>
+
+</html>

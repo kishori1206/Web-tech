@@ -1,12 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Web-Tech</title>
+    <title>Web Tech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styling/style1.css">
+    <link rel="stylesheet" href="./styling/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <h1> Welcome to techo world</h1>
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-md  navbar-light fixed-top " style="background-color: #e3f2fd;">
+
+            <div class="container text-uppercase ps-2">
+                <a class="navbar-brand" href="#">WEB TECH</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://aakhya1.github.io/courses-page/">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ayuu01.github.io/Quiz_app/quiz.html">Quizes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="header-section">
+            <div class="center-div">
+                <h1 style="color: rgb(12, 27, 97);">New Way of Learning</h1>
+                <p>Create Your Own World With new learning experience</p>
+                <div class="header-button">
+                    <a href="about.html">About Us</a>
+                    <a href="https://ayuu01.github.io/Quiz_app/quiz.html">Quizes</a>
+                </div>
+            </div>
+            <br>
+        </section>
+    </div>
+
+
+
+    <section class="header-extradiv">
+        <div class="container">
+            <div class="row">
+                <div class="extra-div col-lg-4  col-md-4 col-12">
+                    <a href="#"><i class="fa-3x fa fa-desktop" aria-hidden="true"></i></a>
+
+                    <h2>Choose what to learn</h2>
+                    <p>From building websites to analyzing data, the choice is yours. Not sure where to start? We'll point you in the right direction. </p>
+
+                </div>
+
+                <div class="extra-div col-lg-4  col-md-4 col-12">
+                    <a href="#"><i class="fa-3x fa fa-magic" aria-hidden="true"></i></a>
+
+                    <h2>Career Objective</h2>
+                   <p>It’s time to start
+                    investing in yourself
+                    Because learning to code might be the easiest way to change your career</p>
+
+                </div>
+
+                <div class="extra-div col-lg-4  col-md-4 col-12">
+                    <a href="#"><i class="fa-3x fa fa-trophy" aria-hidden="true"></i></a>
+
+                    <h2>ACEESS ANYWHERE</h2>
+                    <p>It is easy to use and easy to access. 
+                         It available for 24x7 which gives ease to Learners with flexible timings and very user-friendly </p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="banner">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 center">
+                    <br>
+                    <h1 style="color: rgb(12, 27, 97);">Practice your skills now and know how much you learn</h1>
+                    <p>The more your practice the more you grow </p>
+                    <br>
+
+                    <div class="banner-btn">
+                        <a href="#">Take Quiz</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 my-2">
+                    <img src="./images/bg-image3.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <section class="service-offer" id="service-id">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold">
+                what you can learn
+            </h1>
+            <p class="text-center">Expore new technology and enhance your knowledge
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-lg-6 col-md-12 col-10 offset-1-lg-0">
+                    <div class="names my-3">
+                        <h1>html</h1>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">
+                                100%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="names my-3">
+                        <h1>css</h1>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress4-bar-animated bg-success"
+                                style="width:90%">
+                                90%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="names my-3">
+                        <h1>javascript</h1>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                style="width:80%">
+                                80%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="names my-3">
+                        <h1>react</h1>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                style="width:75%">
+                                75%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="names my-3">
+                        <h1>mongo db</h1>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                style="width:85%">
+                                85%
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-6 col-md-12 col-12 service-div">
+
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                         <i class="fa-4x fab fa-html5"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>HTML</h2>
+                            <p>The hypertext markup language HTML was developed as a simple non-proprietary delivery format for global hypertext..</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                         <i class="fa-3x fab fa-css3"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>CSS</h2>
+                            <p>CSS Stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of Web pages.</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-12 service-div">
+
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x fab fa-js"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>JavaScript</h2>
+                            <p>It is the most popular HTML, CSS and JavaScript framework for developing a responsive and mobile friendly website</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa-3x fab fa-react"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>React</h2>
+                            <p>React is a JavaScript library for building user interfaces. It was voted the most loved in the “Frameworks, Libraries, and Other Technologies” category of Stack Overflow’s 2017 Developer Survey</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="project-work">
+        <div class="container headings text-center">
+            <p class="text-center font-weight-bold">More Than 200 sturdents visit our courese</p>
+
+        </div>
+
+        <div class="container project-item">
+            <div>
+                <h1 class="count">1500</h1>
+                <p>Students</p>
+            </div>
+            <div>
+                <h1 class="count">1500</h1>
+                <p>Students</p>
+            </div>
+            <div>
+                <h1 class="count">1500</h1>
+                <p>Studnets</p>
+            </div>
+            <div>
+                <h1 class="count">155</h1>
+                <p>Students</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="banner">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 my-2">
+                    <img src="./images/bg-image2.jpg" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 center">
+                    <br>
+                    <h1 style="color: rgb(12, 27, 97);">We intend the best stystem of Learning to the students</h1>
+                    <p>No need to worry! </p>
+                    <br>
+
+                    <div class="banner-btn">
+                        <a href="#">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- <section class="pricing" id="pricing">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold text-white">It's time to start investing in yourself</h1>
+            <p>Because learning to code might be the easiest way to change your career.</p>
+        </div>
+
+        <div class="contaner">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="card text-center">
+                        <div class="card-header">BASIC</div>
+                        <div class="card-body">
+                            <li>$<span class="money">20</span> website</li>
+                            <li>respective website</li>
+                            <li>respective website</li>
+                            <li>respective website</li>
+                            <li>respective website</li>
+                            <li>Customer support</li>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12 card-second">
+                    <div class="card text-center">
+                        <div class="card-header">BASIC</div>
+                        <div class="card-body">
+                            <li>$<span class="money">20</span> website</li>
+                            <li>respective website</li>
+                            <li>respective website</li>
+                            <li>respective website</li>
+                            <li>respective website</li>
+                            <li>Customer support</li>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card text-center">
+                        <div class="card-header">BASIC</div>
+                        <div class="card-body">
+                            <li>$<span class="money">20</span> website</li>
+                            <li>respective website</li>
+                            <li>respective website</li>
+                            <li>respective website</li>
+                            <li>respective website</li>
+                            <li>Customer support</li>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+    </section> -->
+
+    <!-- <section class="clients">
+        <div class="container">
+            <div class="card">
+                 <div class="img-box">
+                      <img src="./images/html2.jpg" alt="">
+                     
+                 </div>
+                 <div class="content">
+                      <h2>Card-one</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, doloribus hic dolore eaque aperiam odit?</p>
+  
+                 </div>
+            </div>
+            <div class="card">
+                 <div class="img-box">
+                      <img src="./images/html2.jpg" alt="">
+                 </div>
+                 <div class="content">
+                      <h2>Card-two</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, doloribus hic dolore eaque aperiam odit?</p>
+                      
+                 </div>
+            </div>
+            <div class="card">
+                 <div class="img-box">
+                      <img src="./images/html2.jpg" alt="">
+                 </div>
+                 <div class="content">
+                      <h2>Card-three</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, doloribus hic dolore eaque aperiam odit?</p>
+                      
+                 </div>
+            </div>
+       </div>
+    </section> -->
+
+    
+    <section class="client">
+        <!-- <div class="container headings text-center mt-1">
+            <h1 class="text-center font-weight-bold text-uppercase mt-1 ">Happy Clients</h1>
+            <p class="text-capitalize pt-1">Our Satisfied Customer</p>
+        </div> -->
+   
+    <div class="clients-info">
+     
+        <div class="container headings text-center ">
+            <h1 class="text-center font-weight-bold text-uppercase mt-4 ">Our Satisfied Learners</h1>
+            <p class="text-capitalize pt-1"></p>
+        </div> 
+        <div class="container">
+          <input type="radio" name="dot" id="one">
+          <input type="radio" name="dot" id="two">
+          <div class="main-card">
+            <div class="cards">
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                   <img src="./images/client1.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">Alice</div>
+                   <div class="job">Web Designer</div>
+                 </div>
+                 <div class="media-icons">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                 </div>
+               </div>
+              </div>
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                   <img src="./images/client2.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">Justin </div>
+                   <div class="job">Designer</div>
+                 </div>
+                 <div class="media-icons">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                 </div>
+               </div>
+              </div>
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                  <img src="./images/client3.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">Jasmine</div>
+                   <div class="job">Web Devloper</div>
+                 </div>
+                 <div class="media-icons">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                 </div>
+               </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                   <img src="./images/client4.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">Appyl</div>
+                   <div class="job">Designer</div>
+                 </div>
+                 <div class="media-icons">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                 </div>
+               </div>
+              </div>
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                   <img src="./images/client5.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">Adrina </div>
+                   <div class="job">Designer</div>
+                 </div>
+                 <div class="media-icons">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                 </div>
+               </div>
+              </div>
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                   <img src="./images/client6.jpg" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name">Nicole </div>
+                   <div class="job">Web Devloper</div>
+                 </div>
+                 <div class="media-icons">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <label for="one" class=" active one"></label>
+            <label for="two" class="two"></label>
+          </div>
+        </div>
+        </div>
+        
+      </section>
+
+     
+
+
+
+    <footer class="footer-section" id="footer-div">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12 footer-div">
+                    <div>
+                        <h3>
+                            WEB TECH
+                        </h3>
+                        <p>Web Tech provide the best learning experience to the students and give them chance to expand their knowledge and learn new skills.</p>
+
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-2 col-md-4 col-12 footer-div">
+                    <div>
+                        <h3>
+                            Company
+                        </h3>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About</a></li>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12 footer-div">
+                    <div>
+                        <h3>
+                            Languages
+                        </h3>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Reacts</a></li>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12 footer-div">
+                    <div>
+                        <h3>
+                            Learn
+                        </h3>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Quizes</a></li>
+                        <li><a href="#">Video Lectures</a></li>
+                        <li><a href="#">Courses</a></li>
+
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 col-12 footer-div">
+                    <div>
+                        <h3>
+                           Learn
+                        </h3>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">CS Subjects</a></li>
+                        <li><a href="#">Video Lectures</a></li>
+                        <li><a href="#">Courses</a></li>
+
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="mt-5 text-center">
+                <p class="text-center">© Copyright WEB TECH 2020. All rights reserved
+
+                </p>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+        integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous"></script>
+
+
+    <!-- 1: 6min -->
+    <script>
+        $('.count').counterUp({
+            delay: 10,
+            time: 3000
+        })
+    </script>
+
 </body>
+
 </html>
