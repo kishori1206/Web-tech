@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.clients-info{
+  /* display: flex; */
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(45, 173, 247, 0.789);
+  position: relative;
+}
+
+.clients-info body::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #949d1d;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+}
+.clients-info ::selection{
+  background:	#d3e019;
+  color: #fff;
+}
+.clients-info .container{
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0px 0;
+}
+.clients-info .container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+.clients-info #two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.clients-info .container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.clients-info .main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(7, 101, 207, 0.25);
+  transition: all 0.4s ease;
+}
+.clients-info .main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.clients-info .cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.clients-info .cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: white;
+  margin-bottom: 14px;
+}
+.clients-info .card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.clients-info .card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.clients-info .card .content .job{
+  font-size: 20px;
+  color: #1789e7;
+}
+.clients-info .card .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.clients-info .media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #67cfff;
+  transition: all 0.3s ease;
+}
+.clients-info .media-icons a:hover{
+  color: #67faff;
+  background-color: #fff;
+  border-color: #62c3f0;
+}
+.clients-info .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.clients-info .button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #4ddeff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.clients-info .button label.active{
+  width: 35px;
+}
+.clients-info #one:checked ~ .button .one{
+  width: 35px;
+}
+.clients-info #one:checked ~ .button .two{
+  width: 15px;
+}
+.clients-info #two:checked ~ .button .one{
+  width: 15px;
+}
+.clients-info #two:checked ~ .button .two{
+  width: 35px;
+}
+.clients-info input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .clients-info .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .clients-info .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
